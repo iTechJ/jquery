@@ -1,0 +1,30 @@
+.animate {
+    border: 1px solid #9CB4FF;
+    background-color: #E3EAFF;
+    width: 0;
+    height: 0;
+}
+.minus {
+    border: 1px solid #B5C8FF;
+    background-color: #BACBFF;
+    width: 10px;
+    height: 10px;
+    float: right;
+    border-radius: 3px;
+    font-size: 10px;
+    text-align: center;
+    color: #546DB8;
+    font-weight: bold;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.animate:hover {
+    background-color: #D4DEFF;
+}
+
+.plugin {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>starPlugin</title>
+
+    <link rel="stylesheet" type="text/css" href="css/rating.css">
+    <script type="text/javascript" src="js/jquery-2.0.0.js"></script>
+    <!--<script type="text/javascript" src="js/rating.js"></script>-->
+    <script type="text/javascript" src="js/ratingPlugin.js"></script>
+</head>
+
+<body>
+    //checking default settings
+    <div id="rating_1"></div>
+
+    //checking custom settings
+    <div id="rating_2"></div>
+
+    // checking that more than one component within common selector works correct
+    <div class="rating"></div>
+    <div class="rating"></div>
+
+    <script type="text/javascript">
+        $("#rating_1").ratingPlugin();
+
+        $("#rating_2").ratingPlugin({
+            legend: "Custom rating title",
+            icon: 'images/stars.png',
+            maxRating: 5,
+            votes: 2,
+            value: 3.5,
+//            url: "somewhere"
+            url: ""
+        }, function () {
+            $(this).append("CALLBACK");
+        });
+
+        $(".rating").ratingPlugin();
+
+    </script>
+</body>
+</html>
